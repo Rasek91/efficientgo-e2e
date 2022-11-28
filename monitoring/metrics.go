@@ -7,8 +7,8 @@ import (
 	"math"
 	"time"
 
+	"github.com/Rasek91/efficientgo-e2e/monitoring/matchers"
 	"github.com/efficientgo/core/backoff"
-	"github.com/efficientgo/e2e/monitoring/matchers"
 	io_prometheus_client "github.com/prometheus/client_model/go"
 )
 

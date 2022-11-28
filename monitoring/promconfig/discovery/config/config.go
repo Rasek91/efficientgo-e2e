@@ -20,18 +20,18 @@
 package sdconfig
 
 import (
-	"github.com/efficientgo/e2e/monitoring/promconfig/discovery/azure"
-	"github.com/efficientgo/e2e/monitoring/promconfig/discovery/consul"
-	"github.com/efficientgo/e2e/monitoring/promconfig/discovery/dns"
-	"github.com/efficientgo/e2e/monitoring/promconfig/discovery/ec2"
-	"github.com/efficientgo/e2e/monitoring/promconfig/discovery/file"
-	"github.com/efficientgo/e2e/monitoring/promconfig/discovery/gce"
-	"github.com/efficientgo/e2e/monitoring/promconfig/discovery/kubernetes"
-	"github.com/efficientgo/e2e/monitoring/promconfig/discovery/marathon"
-	"github.com/efficientgo/e2e/monitoring/promconfig/discovery/openstack"
-	"github.com/efficientgo/e2e/monitoring/promconfig/discovery/targetgroup"
-	"github.com/efficientgo/e2e/monitoring/promconfig/discovery/triton"
-	"github.com/efficientgo/e2e/monitoring/promconfig/discovery/zookeeper"
+	"github.com/Rasek91/efficientgo-e2e/monitoring/promconfig/discovery/azure"
+	"github.com/Rasek91/efficientgo-e2e/monitoring/promconfig/discovery/consul"
+	"github.com/Rasek91/efficientgo-e2e/monitoring/promconfig/discovery/dns"
+	"github.com/Rasek91/efficientgo-e2e/monitoring/promconfig/discovery/ec2"
+	"github.com/Rasek91/efficientgo-e2e/monitoring/promconfig/discovery/file"
+	"github.com/Rasek91/efficientgo-e2e/monitoring/promconfig/discovery/gce"
+	"github.com/Rasek91/efficientgo-e2e/monitoring/promconfig/discovery/kubernetes"
+	"github.com/Rasek91/efficientgo-e2e/monitoring/promconfig/discovery/marathon"
+	"github.com/Rasek91/efficientgo-e2e/monitoring/promconfig/discovery/openstack"
+	"github.com/Rasek91/efficientgo-e2e/monitoring/promconfig/discovery/targetgroup"
+	"github.com/Rasek91/efficientgo-e2e/monitoring/promconfig/discovery/triton"
+	"github.com/Rasek91/efficientgo-e2e/monitoring/promconfig/discovery/zookeeper"
 )
 
 // ServiceDiscoveryConfig configures lists of different service discovery mechanisms.

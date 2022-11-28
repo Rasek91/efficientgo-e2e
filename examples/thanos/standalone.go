@@ -9,13 +9,13 @@ import (
 	"log"
 	"syscall"
 
+	e2e "github.com/Rasek91/efficientgo-e2e"
+	e2edb "github.com/Rasek91/efficientgo-e2e/db"
+	e2einteractive "github.com/Rasek91/efficientgo-e2e/interactive"
+	e2emon "github.com/Rasek91/efficientgo-e2e/monitoring"
+	e2eprof "github.com/Rasek91/efficientgo-e2e/profiling"
 	"github.com/efficientgo/core/errors"
 	"github.com/efficientgo/core/merrors"
-	"github.com/efficientgo/e2e"
-	e2edb "github.com/efficientgo/e2e/db"
-	e2einteractive "github.com/efficientgo/e2e/interactive"
-	e2emon "github.com/efficientgo/e2e/monitoring"
-	e2eprof "github.com/efficientgo/e2e/profiling"
 	"github.com/oklog/run"
 )
 

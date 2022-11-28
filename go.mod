@@ -1,4 +1,4 @@
-module github.com/efficientgo/e2e
+module github.com/Rasek91/efficientgo-e2e
 
 go 1.18
 

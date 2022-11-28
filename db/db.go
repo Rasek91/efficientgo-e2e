@@ -12,9 +12,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/efficientgo/e2e"
-	e2emon "github.com/efficientgo/e2e/monitoring"
-	e2eprof "github.com/efficientgo/e2e/profiling"
+	e2e "github.com/Rasek91/efficientgo-e2e"
+	e2emon "github.com/Rasek91/efficientgo-e2e/monitoring"
+	e2eprof "github.com/Rasek91/efficientgo-e2e/profiling"
 )
 
 const (

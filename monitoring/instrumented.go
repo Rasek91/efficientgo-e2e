@@ -11,10 +11,10 @@ import (
 	"strings"
 	"time"
 
+	e2e "github.com/Rasek91/efficientgo-e2e"
 	"github.com/efficientgo/core/backoff"
 	"github.com/efficientgo/core/errcapture"
 	"github.com/efficientgo/core/errors"
-	"github.com/efficientgo/e2e"
 	"github.com/prometheus/common/expfmt"
 )
 

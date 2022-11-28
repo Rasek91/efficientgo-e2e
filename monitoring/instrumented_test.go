@@ -11,9 +11,9 @@ import (
 	"testing"
 	"time"
 
+	e2e "github.com/Rasek91/efficientgo-e2e"
 	"github.com/efficientgo/core/backoff"
 	"github.com/efficientgo/core/testutil"
-	"github.com/efficientgo/e2e"
 )
 
 type runnableFake struct {

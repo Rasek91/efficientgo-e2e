@@ -8,12 +8,12 @@ import (
 	"testing"
 	"time"
 
+	e2e "github.com/Rasek91/efficientgo-e2e"
+	e2edb "github.com/Rasek91/efficientgo-e2e/db"
+	e2einteractive "github.com/Rasek91/efficientgo-e2e/interactive"
+	e2emon "github.com/Rasek91/efficientgo-e2e/monitoring"
 	"github.com/efficientgo/core/backoff"
 	"github.com/efficientgo/core/testutil"
-	"github.com/efficientgo/e2e"
-	e2edb "github.com/efficientgo/e2e/db"
-	e2einteractive "github.com/efficientgo/e2e/interactive"
-	e2emon "github.com/efficientgo/e2e/monitoring"
 )
 
 func TestExampleApp(t *testing.T) {
