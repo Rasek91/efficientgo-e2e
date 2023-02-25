@@ -19,6 +19,7 @@ import (
 
 type DockerSlimOptions struct {
 	Name           string
+	ExtraArgs      []string
 	ExtraBuildArgs []string
 }
 
@@ -41,6 +42,7 @@ func (e *DockerEnvironment) RunnableSlim(opts DockerSlimOptions) RunnableBuilder
 			extensions: map[any]any{},
 		},
 		containerName:  dockerNetworkContainerHost(e.networkName, opts.Name),
+		extraArgs:      opts.ExtraArgs,
 		extraBuildArgs: opts.ExtraBuildArgs,
 	}
 	if err := os.MkdirAll(d.Dir(), 0750); err != nil {
@@ -109,6 +111,7 @@ func (e *DockerEnvironment) buildDockerSlimRunArgs(name string, ports map[string
 type dockerSlimRunnable struct {
 	container      *dockerRunnable
 	containerName  string
+	extraArgs      []string
 	extraBuildArgs []string
 	pid            int
 }
@@ -187,8 +190,16 @@ func (d *dockerSlimRunnable) Start() (err error) {
 		return err
 	}
 
-	cmd := d.container.env.exec("docker-slim", append([]string{"build"}, d.container.env.buildDockerSlimRunArgs(d.container.name, d.container.ports,
+	var args []string
+
+	if len(d.extraArgs) > 0 {
+		args = append(args, d.extraArgs...)
+	}
+
+	args = append(args, append([]string{"build"}, d.container.env.buildDockerSlimRunArgs(d.container.name, d.container.ports,
 		d.extraBuildArgs, d.container.opts)...)...)
+
+	cmd := d.container.env.exec("docker-slim", args...)
 	l := &LinePrefixLogger{prefix: d.Name() + ": ", logger: d.container.logger}
 	cmd.Stdout = l
 	cmd.Stderr = l
